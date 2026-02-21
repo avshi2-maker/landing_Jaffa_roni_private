@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="הזמנה למפגש עם ד״ר רוני ספיר - 2.12.25">
+    <title>הזמנה למפגש - ד״ר רוני ספיר</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .invitation-card {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header-image {
+            width: 100%;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800') center/cover;
+            position: relative;
+        }
+        
+        .header-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 30px;
+            color: white;
+        }
+        
+        .header-overlay h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .date-time {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px 25px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .speaker-info {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .speaker-info h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        
+        .speaker-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .topic {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border-right: 5px solid #667eea;
+        }
+        
+        .topic h3 {
+            font-size: 1.4em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .topic p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .location {
+            background: linear-gradient(135deg, #FFE259 0%, #FFA751 100%);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .location h3 {
+            font-size: 1.6em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .location p {
+            font-size: 1.2em;
+            color: #333;
+            margin: 8px 0;
+        }
+        
+        .cta-button {
+            display: block;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:active {
+            transform: scale(0.95);
+        }
+        
+        .whatsapp-icon {
+            font-size: 1.5em;
+            margin-left: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 480px) {
+            .header-image {
+                height: 250px;
+            }
+            
+            .header-overlay h1 {
+                font-size: 1.6em;
+            }
+            
+            .date-time {
+                font-size: 1.3em;
+                padding: 12px 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .speaker-info h2 {
+                font-size: 1.5em;
+            }
+            
+            .topic h3 {
+                font-size: 1.2em;
+            }
+            
+            .location h3 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-card">
+        <!-- Header with Image -->
+        <div class="header-image">
+            <div class="header-overlay">
+                <h1>🌿 הנכם מוזמנים</h1>
+                <div class="date-time">
+                    📅 2.12.25 | ⏰ 19:00
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Speaker Info -->
+            <div class="speaker-info">
+                <h2>לפגישה עם רוני ספיר</h2>
+                <p>מומחה בינלאומי לרפואה סינית</p>
+                <p>הקים את ביה"ס "מזרח מערבי"</p>
+            </div>
+            
+            <!-- Topic -->
+            <div class="topic">
+                <h3>נושא המפגש</h3>
+                <p>במפגש נמצא את הדרך להבנת הבריאות.</p>
+                <p><strong>האחד - אבולוציה, בריאה ובריאות</strong></p>
+                <p>בשיח נעמיק על הדרך בה אנו נעים בעולם – בין בריאה, בריאות והתחדשות המתמדת.</p>
+            </div>
+            
+            <!-- Location -->
+            <div class="location">
+                <h3>📍 מיקום המפגש</h3>
+                <p><strong>VitaTerra</strong></p>
+                <p>סלמה 2, חצרות יפו</p>
+            </div>
+            
+            <!-- WhatsApp CTA -->
+            <a href="https://wa.me/972533723157?text=שלום%20ויטה%2C%20אני%20מעוניין%20להירשם%20למפגש%20עם%20ד״ר%20רוני%20ספיר%20ב-2.12.25" class="cta-button">
+                <span class="whatsapp-icon">💬</span>
+                לרישום - שלח הודעה לוואטסאפ
+                <div style="font-size: 0.9em; margin-top: 8px;">053-3723157 ויטה</div>
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>מצפים לראותכם! 🌟</p>
+            <p style="margin-top: 10px; font-size: 0.8em;">
+                📞 לפרטים נוספים: 050-5231042 (אבשי ספיר)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
